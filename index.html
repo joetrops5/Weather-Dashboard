@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link type="stylesheet" href="./develop/Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero jumbotron bg-primary">
+      <h1 class="text-center">Weather Dashboard</h1>
+    </header>
+
+    <section class="container">
+      <section class="row">
+        <h2 class="col-9" style="color: blue; font-size: 25px">Search By City</h2>
+        <!-- change color to match bootstrap color-->
+        <section class="col-4">
+          <form>
+            <input type="text" id="searchText" placeholder="Dallas" />
+            <button type="submit" class="btn-primary" id="searchBtn" value="Submit">Submit</button>
+          </form>
+        </section>
+
+        <section class="cityInfo col-6" style="border: 2px solid black">
+          <h1>Today: <span id="crntDate"></span></h1>
+          <p>Temperature: <span id="crnttemp"></span></p>
+          <p>Wind Speed: <span id="crntspeed"></span></p>
+          <p>Humidity: <span id="crnthumid"></span></p>
+          <p>UV Index: <span id="crntUV"></span></p>
+        </section>
+      </section>
+    </section>
+
+    <section class="container text-center">
+      <h3 class="mt-5 mb-5">5 Day Forecast</h3>
+      <section class="row">
+        <section class="col">
+          <p id="futdate1"></p>
+          <p id="futimg1"></p>
+          <p>Temperature: <span id="futtemp1"></span></p>
+          <p>Wind Speed: <span id="futspeed1"></span></p>
+          <p>Humidity: <span id="futhumid1"></span></p>
+        </section>
+        <section class="col">
+          <p id="futdate2"></p>
+          <p id="futimg2"></p>
+          <p>Temperature: <span id="futtemp2"></span></p>
+          <p>Wind Speed: <span id="futspeed2"></span></p>
+          <p>Humidity: <span id="futhumid2"></span></p>
+        </section>
+        <section class="col">
+          <p id="futdate3"></p>
+          <p id="futimg3"></p>
+          <p>Temperature: <span id="futtemp3"></span></p>
+          <p>Wind Speed: <span id="futspeed3"></span></p>
+          <p>Humidity: <span id="futhumid3"></span></p>
+        </section>
+        <section class="col">
+          <p id="futdate4"></p>
+          <p id="futimg4"></p>
+          <p>Temperature: <span id="futtemp4"></span></p>
+          <p>Wind Speed: <span id="futspeed4"></span></p>
+          <p>Humidity: <span id="futhumid4"></span></p>
+        </section>
+        <section class="col">
+          <p id="futdate5"></p>
+          <p id="futimg5"></p>
+          <p>Temperature: <span id="futtemp5"></span></p>
+          <p>Wind Speed: <span id="futspeed5"></span></p>
+          <p>Humidity: <span id="futhumid5"></span></p>
+        </section>
+      </section>
+    </section>
+
+    <footer class="text-center mt-5">
+      <h4>Designed By</h4>
+      <p>@ 2022 Joe Tramontana Rutgers Coding Bootcamp</p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="./develop/Js/index.js"></script>
+  </body>
+</html>
